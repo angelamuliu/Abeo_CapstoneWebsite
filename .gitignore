@@ -1,0 +1,11 @@
+.DS_STORE
+config.rb
+.sass-cache/
+
+# ignore grunt files
+node_modules
+npm-debug.log
+
+# ignore generated source maps
+*.css.map
+*.js.map
