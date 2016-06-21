@@ -1,0 +1,28 @@
+
+/* Styles of new elements, not overrides, etc */
+
+/* Fixing space between Process intro and its subsections */
+#process-intro { margin-bottom: 10px; }
+@media only screen and (min-width: 768px) { #process-intro { margin-bottom: 30px; } }
+
+.diamond {
+    width: 200px;
+    height: 200px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+#diamonds { position: relative; }
+#diamonds.stick-top {
+    position: fixed;
+    top: 105px;
+    right: 5px;
+}
+.stick-bottom {
+    position: absolute;
+    bottom: 0;
+}
