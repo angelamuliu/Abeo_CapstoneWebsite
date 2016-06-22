@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     // Sticky double diamond
-    var sectionHeightBefore = $("#diamonds").offset().top - 70; // height of sections before diamonds + nav
+    var sectionHeightBefore = $("#diamonds").offset().top - 100; // height of sections before diamonds + nav
     var diamondHeight = $("#process-sections").height();
     $("#diamonds").css("height", diamondHeight);
 

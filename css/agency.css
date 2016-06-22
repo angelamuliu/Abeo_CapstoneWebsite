@@ -201,7 +201,7 @@
 }
     header
 {
-    background-image:url(../img/header-bg.jpg);
+    /*background-image:url(../img/header-bg.jpg);*/
     background-repeat:none;
     background-attachment:scroll;
     background-position:center center;
@@ -468,7 +468,8 @@
 }
 .timeline>li:last-child
 {
-    margin-bottom:0
+    margin-bottom:0;
+    min-height: initial;
 }
 .timeline .timeline-heading h4
 {
