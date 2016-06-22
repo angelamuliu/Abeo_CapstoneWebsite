@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     // Sticky double diamond
-    var sectionHeightBefore = $("#process-intro").height() + 50; // height of sections before diamonds
+    var sectionHeightBefore = $("#diamonds").offset().top - 70; // height of sections before diamonds + nav
     var diamondHeight = $("#process-sections").height();
     $("#diamonds").css("height", diamondHeight);
 
@@ -13,6 +13,7 @@ $(document).ready(function() {
                 $("#diamonds>div").addClass("stick-bottom");
             } else {
                 $("#diamonds").addClass("stick-top");    // scrolling in = sticky
+
                 $("#diamonds>div").removeClass("stick-bottom");
             }
         } else {
