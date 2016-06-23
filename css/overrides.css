@@ -7,6 +7,9 @@
 */
 
 
+/* Nav active override */
+.navbar-default .navbar-nav>.active>a{ color:#fed136; background:none; }
+
 /* Fix for padding for left aligning the timeline circles */
 @media only screen and (min-width: 768px) { .timeline>li .timeline-panel { padding-left: 120px; } }
 @media only screen and  (min-width: 992px) { .timeline>li .timeline-panel {padding-left: 170px; } }
@@ -27,6 +30,3 @@
 
 
 
-/* Keep images from being huge */
-.img-cont img { max-width: 100%;}
-.img-cont { width: 100%;}

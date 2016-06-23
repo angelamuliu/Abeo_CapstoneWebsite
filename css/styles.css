@@ -20,6 +20,9 @@ span.h4-lead {
 }
 
 
+/* Keep images from being huge */
+.img-cont img { width: 100%;}
+.img-cont { width: 100%;}
 
 
 
@@ -47,3 +50,27 @@ span.h4-lead {
     top: 100px; /* Addresses nav */
 }
 .stick-bottom { bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+.about-card { clear: both; }
+@media only screen and (min-width: 370px) { .card-image { float: left; } }
+#about-us .img-cont {
+    width: 110px;
+    margin-right: 25px;
+}
+@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
+@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
+
+
+
+
+
+
