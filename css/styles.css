@@ -2,6 +2,10 @@
 /* Styles of new elements, not overrides, etc */
 
 
+/************************************************/
+/* GENERAL */
+/************************************************/
+
 h3 {
     margin-bottom: 20px;
 }
@@ -22,7 +26,11 @@ span.h4-lead {
 .img-cont img { width: 100%;}
 .img-cont { width: 100%;}
 
-/* Intro Fixes */
+
+/************************************************/
+/* HEADER */
+/************************************************/
+
 .intro-text {
     position: absolute;
     top: 120px;
@@ -42,68 +50,16 @@ span.h4-lead {
 .intro-heading span {
     color: #fff284;
 }
-
-
-
-/* Fixing space between Process intro and its subsections */
-#process-intro { margin-bottom: 10px; }
-@media only screen and (min-width: 768px) { #process-intro { margin-bottom: 30px; } }
-
-#home .img-cont { padding-bottom: 10px;}
-@media only screen and (min-width: 768px) { #home .img-cont {padding-bottom: 30px;} }
+#prototype-video { width: 100%; height: 80vh; }
 
 #home p {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+#home .img-cont { padding-bottom: 10px;}
+@media only screen and (min-width: 768px) { #home .img-cont {padding-bottom: 30px;} }
 
-
-/* Double diamond code - need to clean it lol */
-.diamond {
-    width: 200px;
-    height: 200px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-left: 60px;
-    margin-top: 60px;
-}
-#diamonds { position: absolute; }
-#diamond-cont {
-    position:absolute;
-    right:50px;
-}
-@media only screen and (min-width: 1200px) { #diamond-cont { margin-bottom: 30px; } }
-#diamonds.stick-top {
-    position: fixed;
-    top: 100px; /* Addresses nav */
-}
-.stick-bottom { bottom: 0; }
-
-
-#prototype-video { width: 100%; height: 80vh; }
-
-
-
-
-
-
-.about-card { clear: both; }
-@media only screen and (min-width: 500px) { .card-image { float: left; } }
-#about-us .img-cont {
-    width: 110px;
-    margin-right: 25px;
-}
-@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
-@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
-
-
-
-
-
-/* COVER */
+/* COVER VIDEO CSS */
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -145,5 +101,68 @@ span.h4-lead {
 .video-container video.fillWidth {
     width: 100%;
 }
+/* END COVER VIDEO CSS */
+
+
+/************************************************/
+/* RESEARCH */
+/************************************************/
+
+#research { background-color: #fbfbfb;}
+
+/* Fixing space between research intro and its subsections */
+#research-intro { margin-bottom: 10px; }
+@media only screen and (min-width: 768px) { #research-intro { margin-bottom: 30px; } }
+@media only screen and (min-width: 768px) { #research-sections { padding-top: 10px; } }
+
+/* Double diamond code - need to clean it lol */
+.diamond {
+    width: 200px;
+    height: 200px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-radius: 10px;
+    border: 2px solid #c1c9d0;
+    margin-left: 60px;
+    margin-top: 73px;
+    position: relative;
+}
+.diamond.focus {
+    border: 2px solid #252b31;
+    z-index: 5;
+}
+.diamonds { position: absolute; }
+.diamond-cont {
+    position:absolute;
+    right:50px;
+}
+@media only screen and (min-width: 1200px) { .diamond-cont { margin-bottom: 30px; } }
+.diamonds.stick-top {
+    position: fixed;
+    top: 100px; /* Addresses nav */
+}
+.stick-bottom { bottom: 0; }
+
+
+
+
+
+
+/************************************************/
+/* ABOUT US */
+/************************************************/
+
+.about-card { clear: both; }
+@media only screen and (min-width: 500px) { .card-image { float: left; } }
+#about-us .img-cont {
+    width: 110px;
+    margin-right: 25px;
+}
+@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
+@media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
+
+
+
 
 

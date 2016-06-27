@@ -9,6 +9,8 @@
 
 /* Nav active override */
 .navbar-default .navbar-nav>.active>a{ color:#fed136; background: none; }
+/* Remove button like hamburger menu on nav */
+.navbar-default .navbar-toggle { border: none;}
 /* Nav mobile remove bg */
 .navbar-default { background: none;}
 
@@ -31,7 +33,6 @@ header {background-image:url(../img/placeholder.jpg);}
 header {background: none;}
 header .intro-text { max-width: 600px; padding-top: 100px; }
 @media only screen and (min-width: 768px) { header .intro-text { max-width: 800px; padding-top: 150px;} }
-
 
 /* Fix of size of timeline circles for large screens */
 @media only screen and (min-width: 992px) { .timeline>li .timeline-image { width:130px; height:130px; } }
