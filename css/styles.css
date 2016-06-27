@@ -112,8 +112,7 @@ span.h4-lead {
 
 /* Fixing space between research intro and its subsections */
 #research-intro { margin-bottom: 10px; }
-@media only screen and (min-width: 768px) { #research-intro { margin-bottom: 30px; } }
-@media only screen and (min-width: 768px) { #research-sections { padding-top: 10px; } }
+@media only screen and (min-width: 768px) { #research-intro { margin-bottom: 40px; } }
 
 /* Double diamond code - need to clean it lol */
 .diamond {
@@ -147,6 +146,11 @@ span.h4-lead {
 
 
 
+/************************************************/
+/* DESIGN */
+/************************************************/
+#design-intro { margin-bottom: 10px; }
+@media only screen and (min-width: 768px) { #design-intro { margin-bottom: 40px; } }
 
 
 /************************************************/
