@@ -8,7 +8,9 @@
 
 
 /* Nav active override */
-.navbar-default .navbar-nav>.active>a{ color:#fed136; background:none; }
+.navbar-default .navbar-nav>.active>a{ color:#fed136; background: none; }
+/* Nav mobile remove bg */
+.navbar-default { background: none;}
 
 /* Fix for padding for left aligning the timeline circles */
 @media only screen and (min-width: 768px) { .timeline>li .timeline-panel { padding-left: 120px; } }

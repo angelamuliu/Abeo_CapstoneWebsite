@@ -22,19 +22,28 @@ span.h4-lead {
 .img-cont img { width: 100%;}
 .img-cont { width: 100%;}
 
-
+/* Intro Fixes */
 .intro-text {
     position: absolute;
-    top: 30vh;
+    top: 120px;
     width: 100%;
     text-align: center;
 }
+@media only screen and (min-width: 768px) { .intro-text {top: 30vh;} }
 .intro-heading { 
     position: relative;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform:uppercase;
     font-weight:700;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.intro-heading span {
+    color: #fff284;
+}
+
+
 
 /* Fixing space between Process intro and its subsections */
 #process-intro { margin-bottom: 10px; }
