@@ -14,6 +14,16 @@ $(document).ready(function() {
     })
 
     // ----------------------------------------
+    // Masonry gallery grid for whiteboard videos
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    });
+
+
+    // ----------------------------------------
     // Sticky double diamond
 
     // Setting up diamonds for research section

@@ -144,6 +144,15 @@ span.h4-lead {
 .stick-bottom { bottom: 0; }
 
 
+/************************************************/
+/* SYNTHESIS */
+/************************************************/
+
+.grid-sizer, .grid-item { width: 50%; }
+@media only screen and (min-width: 768px) {
+    .grid-sizer, .grid-item { width: 25%; }
+}
+
 
 
 /************************************************/
