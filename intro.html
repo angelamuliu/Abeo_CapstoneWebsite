@@ -85,11 +85,19 @@
 
 
 <!-- Header -->
-    <header id="home" class="parallax-window" data-parallax="scroll" data-image-src="img/header-bg.jpg">
-        <div class="container">
-            <div class="intro-text">
+<header id="home">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12"><div class="intro-text">
                 <div class="intro-heading">How can you discover what you don't know?</div>
-                
+            </div></div>
+
+            <div class="col-sm-12 visible-xs-block">
+                <iframe id="prototype-video" src="https://www.youtube.com/embed/JQU6o4ooL5E" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
                 <h5>The Problem</h5>
                 <p>
                     Create a product or service prototype to supplement the Odigo ecosystem that will help tourists in Japan overcome barriers or create moments of delight through their journey. The solution will enhance Odigo’s user base and bring recognition to their brand.
@@ -104,12 +112,30 @@
                 <p>
                     Another short paragraph that introduces the solution, why it's cool, unique, etc. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-
-                <iframe id="prototype-video" src="https://www.youtube.com/embed/JQU6o4ooL5E" frameborder="0" allowfullscreen></iframe>
-
             </div>
+
+            <div class="hidden-xs col-md-6">
+                                <div class="img-cont">
+                    <a data-toggle="modal" data-target="#intro-modal">
+                        <img src="img/process/filler.jpg" />
+                    </a>
+                </div>
+
+                <div class="modal fade" id="intro-modal" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <iframe id="prototype-video" src="https://www.youtube.com/embed/JQU6o4ooL5E" frameborder="0" allowfullscreen></iframe>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </header>
+    </div>
+</header>
 
 
 
@@ -139,9 +165,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
-    <script src="js/parallax.min.js"></script>
-
     <!-- Custom Javascript (not to theme) -->
+    <script src="js/script.js"></script>
 
 
 </body>
