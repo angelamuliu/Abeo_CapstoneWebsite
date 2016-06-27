@@ -10,6 +10,9 @@ h4 {
     text-transform: initial;
     font-weight: 500;
 }
+h5 {
+    margin-bottom: 5px;
+}
 span.h4-lead {
     font-size: 12px;
     color: #afafaf;
@@ -20,10 +23,30 @@ span.h4-lead {
 .img-cont { width: 100%;}
 
 
+.intro-text {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    text-align: center;
+}
+.intro-heading { 
+    position: relative;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
 /* Fixing space between Process intro and its subsections */
 #process-intro { margin-bottom: 10px; }
 @media only screen and (min-width: 768px) { #process-intro { margin-bottom: 30px; } }
 
+#home .img-cont { padding-bottom: 10px;}
+@media only screen and (min-width: 768px) { #home .img-cont {padding-bottom: 30px;} }
+
+#home p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
 
 /* Double diamond code - need to clean it lol */
@@ -51,7 +74,7 @@ span.h4-lead {
 .stick-bottom { bottom: 0; }
 
 
-
+#prototype-video { width: 100%; height: 80vh; }
 
 
 
@@ -70,5 +93,48 @@ span.h4-lead {
 
 
 
+
+/* COVER */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+}
+.video-container .poster img {
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
 
 
