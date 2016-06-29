@@ -1,9 +1,6 @@
 
 $(document).ready(function() {
 
-    // ----------------------------------------
-    // NAV: Change color of scroll to an almost black as I go down
-
     $(window).scroll(function() {
         var scrollposition = $(window).scrollTop();
         if (scrollposition > 100) {
@@ -12,6 +9,7 @@ $(document).ready(function() {
             $("nav")[0].style.background = 'none';
         }
     })
+
 
     // ----------------------------------------
     // Masonry gallery grid for whiteboard videos
@@ -37,7 +35,6 @@ $(document).ready(function() {
 
     // Scroll listener to make them stick
     $(window).scroll(function() {
-        console.log($(window).scrollTop());
         // First figure out if its the research or prototyping diamonds
         var diamonds, sectionHeightBefore, diamondHeight;
         if ( $(window).scrollTop() < 3000 )  {
