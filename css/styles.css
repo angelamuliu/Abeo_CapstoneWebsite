@@ -6,11 +6,11 @@
 /* GENERAL */
 /************************************************/
 
-h3 {
+h3 {    
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 h4 {
-    margin-top: 0;
     text-transform: initial;
     font-weight: 500;
 }
@@ -20,6 +20,9 @@ h5 {
 span.h4-lead {
     font-size: 12px;
     color: #afafaf;
+}
+section h2.section-heading {
+    color: #fbb200;
 }
 
 /* Keep images from being huge */
@@ -141,6 +144,18 @@ span.h4-lead {
     top: 100px; /* Addresses nav */
 }
 .stick-bottom { bottom: 0; }
+.diamond span {
+    position: absolute;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    margin-top: 90px;
+    margin-left: 60px;
+    color: #c1c9d0;
+}
+.diamond.focus span {
+    color: #252b31;
+}
 
 
 /************************************************/
@@ -157,6 +172,10 @@ span.h4-lead {
 /************************************************/
 /* DESIGN */
 /************************************************/
+
+#design {
+    background-color: #fbfbfb;
+}
 #design-intro { margin-bottom: 10px; }
 @media only screen and (min-width: 768px) { #design-intro { margin-bottom: 40px; } }
 
