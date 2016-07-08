@@ -107,10 +107,12 @@ section h2.section-heading {
 
 
 /************************************************/
-/* RESEARCH */
+/* RESEARCH + FINDINGS */
 /************************************************/
 
 #research { background-color: #fbfbfb;}
+
+.timeline { z-index: 100; }
 
 /* Fixing space between research intro and its subsections */
 #research-intro { margin-bottom: 10px; }
@@ -144,7 +146,7 @@ section h2.section-heading {
     top: 100px; /* Addresses nav */
 }
 .stick-bottom { bottom: 0; }
-.diamond span {
+.diamond span.diamond-label {
     position: absolute;
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
@@ -152,9 +154,49 @@ section h2.section-heading {
     margin-top: 90px;
     margin-left: 60px;
     color: #c1c9d0;
+    z-index: 5;
 }
-.diamond.focus span {
+.diamond.focus span.diamond-label {
     color: #252b31;
+}
+.diamond-time {
+    color: #c1c9d0;
+    position: absolute;
+    width:60%;
+    text-align: right;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    top: -58px;
+    left: -23px;
+    border-bottom: 1px dashed #c1c9d0;
+}
+.diamond.focus .diamond-time {
+    color: #2b9cff;
+    border-bottom: 1px dashed #2b9cff;
+}
+.diamond-fillcont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+    z-index: 3;
+    position: relative;
+}
+.diamond-fill {
+    width: 763px;
+    height: 30px;
+    background: #e8edf1;
+    /*height: 284px;*/
+    position: absolute;
+    left: -200px;
+    top: -180px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+#findings h3 {
+    margin-top: 85px;
 }
 
 
@@ -185,7 +227,7 @@ section h2.section-heading {
 /************************************************/
 
 .about-card { clear: both; }
-@media only screen and (min-width: 500px) { .card-image { float: left; } }
+@media only screen and (min-width: 500px) { .card-image { float: left; margin-bottom: 10px; } }
 #about-us .img-cont {
     width: 110px;
     margin-right: 25px;

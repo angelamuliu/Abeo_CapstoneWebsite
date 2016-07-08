@@ -54,6 +54,8 @@ $(document).ready(function() {
             } else {
                 diamonds.addClass("stick-top");    // scrolling in = sticky
                 diamonds.find(".diamond-cont").removeClass("stick-bottom");
+
+                diamonds.find(".diamond-fill").css("height", ($(this).scrollTop() - sectionHeightBefore + 30) + "px");
             }
         } else {
             diamonds.removeClass("stick-top"); // scroll before = remove
