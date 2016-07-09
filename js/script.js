@@ -29,23 +29,13 @@ $(document).ready(function() {
     var diamondHeight_research = $("#research-sections").height();
     $("#diamonds-1").css("height", diamondHeight_research);
 
-    var sectionHeightBefore_design = $("#diamonds-2").offset().top - 100; // height of sections before diamonds + nav
-    var diamondHeight_design = $("#design-sections").height();
-    $("#diamonds-2").css("height", diamondHeight_design);
-
     // Scroll listener to make them stick
     $(window).scroll(function() {
         // First figure out if its the research or prototyping diamonds
         var diamonds, sectionHeightBefore, diamondHeight;
-        if ( $(window).scrollTop() < 3000 )  {
-            diamonds = $(".diamonds").first();
-            sectionHeightBefore = sectionHeightBefore_research;
-            diamondHeight = diamondHeight_research;
-        } else {
-            diamonds = $(".diamonds").last();
-            sectionHeightBefore = sectionHeightBefore_design;
-            diamondHeight = diamondHeight_design;
-        }
+        diamonds = $(".diamonds").first();
+        sectionHeightBefore = sectionHeightBefore_research;
+        diamondHeight = diamondHeight_research;
 
         if( ($(this).scrollTop() > sectionHeightBefore)){
             if (($(this).scrollTop() > (sectionHeightBefore + diamondHeight - 500))) {

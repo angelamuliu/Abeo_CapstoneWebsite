@@ -383,7 +383,7 @@
     position:absolute;
     content:"";
     width:2px;
-    background-color:#d0dff1;
+    /*background-color:#d0dff1;*/
     /*left:50px;*/
     margin-left:-1.5px
 }
@@ -433,10 +433,10 @@
     height:80px;
     position:absolute;
     z-index:100;
-    background-color:#fed136;
+    /*background-color:#fed136;*/
     color:#fff;
-    border-radius:100%;
-    border:5px solid #d0dff1;
+    /*border-radius:100%;*/
+    /*border:5px solid #d0dff1;*/
     text-align:center
 }
 .timeline>li .timeline-image h4
