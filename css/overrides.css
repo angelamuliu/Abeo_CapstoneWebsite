@@ -14,11 +14,16 @@
     color: #fff;
 }
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #fec503;
+    color: #ff61da;
     background: none;
 }
+
+.navbar-default ul.nav li a:hover {
+    color: #e8bcd2;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff284;
+    color: #dc5db5;
     background: none;
 }
 /* Remove button like hamburger menu on nav */
@@ -56,3 +61,20 @@ header .intro-text .intro-heading {
     text-align: left;
 }
 @media only screen and (min-width: 768px) { header .intro-text .intro-heading { font-size: 50px; width: 100%; } }
+
+
+
+
+
+/* Font overrides */
+h1,h2,h3,h4,h5,h6 {
+    font-family:"semplicitapro",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:initial;
+}
+body {
+    font-family:"adobe-caslon-pro","Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar-default .nav li a {
+    font-size: 134x;
+    font-family: "semplicitapro",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}

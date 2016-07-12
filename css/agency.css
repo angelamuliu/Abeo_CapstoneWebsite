@@ -13,7 +13,7 @@
 }
     p
 {
-    font-size:14px;
+    font-size:15px;
     line-height:1.75
 }
     p.large
@@ -36,7 +36,7 @@
 {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform:uppercase;
-    font-weight:700
+    /*font-weight:700*/
 }
 .img-centered
 {
@@ -145,7 +145,7 @@
 .navbar-default .nav li a
 {
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     font-weight:400;
     letter-spacing:1px;
     color:#fff;
@@ -383,7 +383,7 @@
     position:absolute;
     content:"";
     width:2px;
-    /*background-color:#d0dff1;*/
+    background-color:#d0dff1;
     /*left:50px;*/
     margin-left:-1.5px
 }
@@ -435,8 +435,8 @@
     z-index:100;
     /*background-color:#fed136;*/
     color:#fff;
-    /*border-radius:100%;*/
-    /*border:5px solid #d0dff1;*/
+    border-radius:100%;
+    border:3px solid #d0dff1;
     text-align:center
 }
 .timeline>li .timeline-image h4

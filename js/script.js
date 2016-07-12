@@ -1,6 +1,15 @@
 
 $(document).ready(function() {
 
+    // ----------------------------------------
+    // Fixing the issue where the nav automatically highlights the first section even when
+    // we're not on it when loading page at top ...
+    if ($(window).scrollTop() === 0) {
+        $("li.active").removeClass("active");
+    }
+
+    // ----------------------------------------
+
     $(window).scroll(function() {
         var scrollposition = $(window).scrollTop();
         if (scrollposition > 100) {
