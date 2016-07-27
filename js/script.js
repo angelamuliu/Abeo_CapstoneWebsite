@@ -6,10 +6,11 @@ $(document).ready(function() {
             download:false,
             thumbnail:true,
             animateThumb:true,
+                showThumbByDefault: false,
+
             // thumbWidth:50,
             // thumbHeight:50,
-            subHtmlSelectorRelative: true
-
+            subHtmlSelectorRelative: true,
         });
  
         $("#lightgallery2").lightGallery({
