@@ -1,6 +1,34 @@
 
 $(document).ready(function() {
 
+
+        $("#lightgallery").lightGallery({
+            download:false,
+            thumbnail:true,
+            animateThumb:true,
+                showThumbByDefault: false,
+
+            // thumbWidth:50,
+            // thumbHeight:50,
+            subHtmlSelectorRelative: true,
+        });
+ 
+        $("#lightgallery2").lightGallery({
+            download:false,
+            thumbnail:true,
+            animateThumb:true,
+            // thumbWidth:50,
+            // thumbHeight:50,
+            subHtmlSelectorRelative: true,
+            youtubePlayerParams: {
+                modestbranding: 1,
+                showinfo: 0,
+                rel: 0,
+                controls: 0
+            }
+
+        });
+
     // ----------------------------------------
     // Fixing the issue where the nav automatically highlights the first section even when
     // we're not on it when loading page at top ...

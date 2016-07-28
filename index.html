@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CMU mHCI Capstone project 2016">
-    <meta name="author" content="Angela Mu Liu">
+    <meta name="description" content="Odigo CMU MHCI Capstone Project 2016">
 
-    <title>Abeo - mHCI Capstone</title>
+    <title>Odigo CMU MHCI Capstone Project | Team Abeo</title>
+
+    <!-- Lightbox gallery -->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,8 +39,37 @@
 <body id="page-top" class="index">
 
 
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/agency.js"></script>
 
 
+
+
+<script src="js/lightgallery.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery plugins -->
+<script src="js/lg-thumbnail.js"></script>
+<script src="js/lg-fullscreen.js"></script>
+<script src="js/lg-video.js"></script>
+<script src="js/lg-zoom.js"></script>
+
+<!-- Custom Javascript (not to theme) -->
+<script src="js/cover.js"></script>
+<script src="js/script.js"></script>
 
 <!--==============================================================-->
 <!-- Navigation -->
@@ -60,7 +91,7 @@
                 <li><a class="page-scroll" href="#home">Overview</a></li>
                 <li><a class="page-scroll" href="#research">Research</a></li>
                 <li><a class="page-scroll" href="#design">Design</a></li>
-                <li><a class="page-scroll" href="#final">Prototype</a></li>
+                <li><a class="page-scroll" href="#final">Final Prototype</a></li>
                 <li><a class="page-scroll" href="#about-us">About Us</a></li>
             </ul>
         </div>
@@ -76,20 +107,20 @@
 <!--==============================================================-->
 <div class="homepage-hero-module">
     <div class="video-container">
+        <div class="overlay"></div>
         <video autoplay loop class="fillWidth">
-            <source src="img/In-The-Clouds/MP4/In-The-Clouds.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="img/In-The-Clouds/WEBM/In-The-Clouds.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="img/Shrine/MP4/Shrine.m4v" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="img/Shrine/WEBM/Shrine.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="poster hidden">
-            <img src="img/In-The-Clouds/Snapshots/In-The-Clouds.jpg" alt="">
+            <img src="img/Shrine/Snapshots/Shrine.jpg" alt="">
         </div>
     </div>
-    <div class="intro-text">
-        <div class="intro-heading"><h4>How can you discover what you don't know?</h4></div>
-        <p>MHCI + Odigo</p>
-    </div>
-</div>
 
+</div>
+<div class="intro-text">
+        <div class="intro-heading"><h1>How can you travel like a local <br> when you don't even speak the language?</h1></div>
+    </div>
 
 
 
@@ -100,69 +131,55 @@
 <section id="home">
     <div class="container">
         <div class="row">
-
-            <div class="col-sm-12">
+             <div class="col-sm-12">
                 <h2 class="section-heading">Overview</h2>
             </div>
-
-            <div class="col-sm-12 visible-xs-block visible-sm-block" style="margin-bottom:10px;2"><!-- On small, video appears on top -->
-                 <div class="img-cont">
-                    <a data-toggle="modal" data-target="#intro-modal-sm">
-                        <img src="img/process/filler.jpg" />
-                    </a>
-                </div>
-                <span class="img-caption">Video caption goes here</span>
-                <div class="modal fade" id="intro-modal-sm" role="dialog">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <iframe id="prototype-video" src="https://www.youtube.com/embed/JQU6o4ooL5E" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6">
-                <p class="lead-in">
-                    The Capstone Project for the Masters of Human-Computer Interaction program at Carnegie Mellon University is a two semester long dive into a client-identified, existing design problem.  Interdisciplinary teams of 5 students research, envision, and design a solution for their client.  Our client, Odigo, is a Tokyo-based technology startup that provides a digital platform for creating and sharing customized trip itineraries for foreigners who visit Japan.  Odigo tasked us with the goal of increasing the number of users to their platform. We researched the foreign tourist's journey to Japan and ...
-                    <br /><br />
-                    With its ancient history, magnetic culture, unique cuisine, and natural beauty, Japan attracts tourists from all over the world.  However, cultural, linguistic, and logistical barriers inhibit foreign tourists’ ability to fully enjoy Japan.
-                </p>
-
-                <div id="challenge" class="secondary-lead-in" style="margin-top: 25px;">
-                <h3>Design Challenge</h3>
-                    <p>
-                    Odigo’s original task for this project centered on designing an interactive experience to attract tourists to Expo City,  a suburban entertainment and shopping complex near Osaka, Japan.  Their goal was to increase the number of users of their website and mobile platform. 
-                    <br /><br />
-                    Create a product or service prototype to supplement the Odigo ecosystem that will help tourists in Japan overcome barriers or create moments of delight through their journey. The solution will enhance Odigo’s user base and bring recognition to their brand.
-                    </p>
-                </div>
-            </div>
-
-            <div class="hidden-xs hidden-sm col-md-offset-1 col-md-5"><!-- On medium up, video floats to right -->
-
-                <div class="img-cont">
-                    <a data-toggle="modal" data-target="#intro-modal">
-                        <img src="img/process/filler.jpg" />
-                    </a>
-                </div>
-                <span class="img-caption">Video caption goes here</span>
-
-                <div class="modal fade" id="intro-modal" role="dialog">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <iframe id="prototype-video" src="https://www.youtube.com/embed/JQU6o4ooL5E" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-    </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div style="margin-top: 25px;">
+                    <h3 class="section-heading">About the Project</h3>
+                    <p  class="lead-in"> The Capstone Project for the Master's of Human-Computer Interaction program at Carnegie Mellon University is an eight month long dive into a client-identified, existing design problem.  Interdisciplinary teams of 5 students research, envision, and design a solution for their client. </p>
+                </div>
+                   
+                
+                 <div  style="margin-top: 25px;">
+                    <h3 class="section-heading">About Odigo</h3>
+                    <p class="lead-in"> Odigo is a Tokyo-based technology startup that provides a digital platform for creating and sharing customized trip itineraries for foreigners who visit Japan. </p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <div class="img-cont">
+                    <img src="img/overview/mockup.png"/>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+
+                <div id="challenge" style="margin-top: 25px;">
+                <h3 class="section-heading">Design Challenge</h3>
+                    <p class="lead-in"> Design a solution that would make Japan more accessible for foreign tourists and discover their unmet needs. </p>
+
+                 <div class="secondary-lead-in">
+                    <h4>Problem</h4>
+                    The Western tourist's journey is riddled with moments of doubt, anxiety, and trepidation that inhibit their ability to experience Japan confidently and freely.     
+                </div>
+                <div class="secondary-lead-in">               
+                     <h4>Solution</h4>
+                    Abeo is a mobile application that provides step-by-step guides to help Western tourists with the frustrating, confusing, and unpredictable moments they encounter while traveling in Japan. </p> 
+                </div>
+                   
+                    
+                </div>
+            </div>
+
+         
+
+            
+        </div>
+
 </section>
 
 
@@ -170,7 +187,7 @@
 
 
 <!--==============================================================-->
-<!-- RESEARCH + FINDINGS -->
+<!-- RESEARCH  -->
 <!--==============================================================-->
 
 <section id="research">
@@ -180,20 +197,70 @@
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <h2 class="section-heading">Research</h2>
+                <h3 class="section-heading">The Problem Space</h3>
                 <p class="lead-in">
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-                </p>
+                    Odigo informs people about what they can do in Japan before they leave, but tourists need to know how to do what they have planned once they arrive.  </p>
+
+
+             <div class="secondary-lead-in">
+                <h4>Target User</h4>
+                <p> Japan attracts tourists from all over the world. After surveying different cultural groups currently making the journey to Japan, we found that the Western tourist experiences the most struggles and provides more opportunities for Odigo to make a large impact in the market. </p>
             </div>
+            <div class="secondary-lead-in">
+                <h4 class="section-heading">The Western Tourists' Challenges</h4>
+                <p> Cultural and language barriers make routine tasks like as ordering food or purchasing a train ticket extremely difficult. </p> </div>
+           
+             <div class="secondary-lead-in">
+                <h4 class="section-heading">Odigo's Current Role</h4>
+                <p> Odigo dominates the planning phase of the tourist's journey by helping them craft trip itineraries before they leave home. The goal of Abeo is to enhance Odigo’s value to tourists by solving and preventing their problems while they are in Japan.</p>
+            </div>
+
+
         </div>
+
     </div>
+    </div>
+
+
 
     <div class="container" id="research-sections">
         <div class="row">
             <div class="col-sm-12 col-md-8">
+                <h3 class="section-heading">Methodology</h3>
+            
+            </div>
+
+            <div class="col-sm-12 col-md-8">
                 <ul class="timeline">
+                        <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/research/secondary.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Secondary Research</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Before conducting any primary research, we exhausted industry and academic research on tourism to Japan to get a big picture view of our target users and the social, economic, and political factors that affect individual decisions to visit Japan.</p>
+                            </div>
+                        </div>
+                    </li>
+                        <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/research/sites.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Travel sites, Blogs, and Forums</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Combing through travel sites, blogs, and forums helped us understand tourist behavior and needs by reading what people were posting online about their experiences prior to and after Japan.</p>
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/research/interviewing.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -207,76 +274,93 @@
 
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/research/ethnographic.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Ethnographic Research in Japan</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>We travelled to Japan from Pittsburgh to understand the Western tourist's journey, build empathy, conduct user interviews, and perform participant observation.</p>
+                                <p>We travelled to Japan from Pittsburgh to understand the Western tourist's journey, build empathy, conduct user interviews, and perform participant observation in context.</p>
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/research/competitive.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Competitive Analysis</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>We studied Odigo’s competitors, from TripAdvisor to Lonely Planet, to better understand Odigo’s advantage in the space of Japanese Tourism. </p>
+                                <p>We studied Odigo’s competitors, from TripAdvisor to Lonely Planet, to better understand Odigo’s advantage and opportunities to grow within the online travel planning industry.</p>
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/research/card.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Card Sorting</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>We created and used cards to test assumptions about travel with 5 participants. We learned assumptions people have about Japan, what images of Japan excited them, and how tourists expect to handle frustrating situations.</p>
+                                <p>We created card sorting activities to test assumptions about travel with 5 participants. We learned assumptions people have about Japan, what images of Japan excited them, and how tourists expect to handle frustrating situations.</p>
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="timeline-image">
-                            <a href="img/research/social-media-scrape.png" target="_blank"><img class="img-circle img-responsive" src="img/research/social-media-scrape_thumb.png" alt=""></a>
+                            <a href="img/research/social-media-scrape.png" target="_blank"><img class="img-circle img-responsive" src="img/research/social-circle1.png" alt=""></a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Social Media Analysis</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>We collected images from Instagram to get a sense of popular attractions and tourist interests prior to leaving for Japan. </p>
+                                <p>By collecting Instagram photos of tourists to Japan, we were able to understand interesting preferences and behaviors of our target users. We discovered patterns and preferences relating to the content in the photographs and the time and location of capture.</p>
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/research/codesign-circle.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Co-Design Workshop</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Through our co-design workshop with Odigo employees, we explored our client's needs, values, hidden knowledge, and constraints.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/research/affinity.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Affinity Diagramming</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>We compiled and sorted 1900+ notes from our interviews and observations into one colossal affinity diagram.</p>
+                                <p>We sorted 1900+ notes from our interviews and observations into one colossal affinity diagram which we used to uncover relationships buried within the data.</p>
                             </div>
                         </div>
                     </li>
 
                 </ul>
             </div>
+
+        <br>
+
+
 
             <div class="hidden-xs hidden-sm container diamonds" id="diamonds-1">
                 <div class="diamond-cont">
@@ -295,32 +379,43 @@
             </div>
 
         </div>
+
+    
     </div>
 
-<!--
-     <div class="container" id="research-intro">
-        <div class="row" id="findings">
-            <div class="col-sm-12 col-md-8">
-                <h3>Findings</h3>
+    <div class="container">
 
-                <h4>Finding 1</h4>
-                <span class="finding-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+        <div class="row col-sm-12 col-md-12">
 
-                <h4>Finding 2</h4>
-                <span class="finding-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+        
+            
 
-                <h4>Finding 3</h4>
-                <span class="finding-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+            <div class = "gallery">
+            <h3 class="section-heading">Explore Our Process</h3>
+                <div id="lightgallery" >
+                    <a href="img/research/gallery/research1.png" data-sub-html="<h4>Instagram Data Visualization</h4><p>We collected and sorted over 4,000 Instagram photos to get a sense what tourists found photo-worthy while traveling in Japan.</p>">
+                                                    <span class="rollover" ></span>
 
-                <h4>Finding 4</h4>
-                <span class="finding-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                        <img src="img/research/gallery/thumb/research1.png"/>
+                    </a>
+
+                      <a href="img/research/gallery/research2.jpg" data-sub-html="<h4>Social Media Card Sorting</h4><p>We asked participants to sort photos based on how they might share the images on social media. We also had them describe what they would do in certain scenarios, like getting lost in the Kyoto suburbs. </p>">
+                                                    <span class="rollover" ></span>
+
+                        <img src="img/research/gallery/thumb/research2.jpg"/>
+                    </a>
+
+                      <a href="img/research/gallery/research3.jpg" data-sub-html="<h4>Co-Design Workshops</h4><p>We led two co-design workshops with Odigo employees, one in Pittsburgh and one in Japan, to learn about the team's perspectives on catering to users in Japan. </p>">
+                                                    <span class="rollover" ></span>
+
+                        <img src="img/research/gallery/thumb/research3.jpg"/>
+                    </a>
+                </div>
             </div>
-        </div>
+        </div>  
     </div>
--->
 
 </section>
-
 
 
 
@@ -329,127 +424,162 @@
 <!-- DESIGN -->
 <!--==============================================================-->
 
+
 <section id="design">
 
+    <!-- Lead In -->
     <div class="container" id="design-intro">
         <div class="row">
-            <!-- Lead In -->
             <div class="col-sm-12 col-md-8">
                 <h2 class="section-heading">Design</h2>
+                <h3 class="section-heading">Findings</h2>
+
                 <p class="lead-in">
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-                </p>
+                We created prototypes to learn more about our target user's needs and preferences. Three main findings drove our design: <br>
+
+                • Tourists want their devices to be invisible while exploring.<br>
+                • Procedural tasks are hard for tourists.<br>
+                • Notifications are intrusive when they are do not lead to clear actions.<br>
+                </p> 
+                <br></br>
+
+            </div>
+             <div class="col-sm-12 col-md-8">
+                <h3 class="section-heading">Methodology</h2>
+<!-- 
+                <p class="lead-in">
+                Possible futures were tried, tested, and scrutinized until we settled on a solution that provides the most value to Odigo and its users. We narrowed in on a mobile solution and built a native iOS app that delivers in-the-moment information for tourists. 
+                </p>  -->
+                
             </div>
         </div>
+    </div>
 
+    <div class="container" id="design-sections">
         <div class="row">
             <div class="col-sm-12 col-md-8">
-                <div class="design-section secondary-lead-in">
-                    <h4>Ideation</h4>
-                    <div>
-                        <h5>Synthesis</h5>
-                        Using a range of pain points tourists face throughout their journey to Japan, we brainstormed ways of addressing them and created a total of 21 concepts to evaluate
-                        <h5>Speed dating</h5>
-                        We created short video vignettes to encapsulate a selection of our ideas and used these videos to conduct in-person and remote feedback sessions with users and Odigo employees.
-                    </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/visioning.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Visioning</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Using a range of pain points tourists face throughout their journey to Japan, we brainstormed ways of addressing them and created a total of 21 concepts to evaluate. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/speeddating.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Speed Dating</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We created short video vignettes to encapsulate our ideas. We used these videos to conduct in-person and remote feedback sessions with users and the Odigo team. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/lofi.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Low Fidelity Prototyping</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p> We used paper and cardboard prototypes to test our ideas and gather more insight into the values, believes, and needs of the Western tourist.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/midfi.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Medium Fidelity Prototyping</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We created a click-through wireframe mockup of our step-by-step instruction app to put the solution in the hands of users.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/hifi.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>High Fidelity Prototyping</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We narrowed in on a mobile solution and built a native iOS app that delivers in-the-moment information for tourists. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/design/usability.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Usability Testing</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We completed three rounds of usability testing. We aimed to learn if people could understand the purpose of the app and how to use it. We observed its successes and failures and made improvements accordingly. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+    
+    <div class="container">
+
+        <div class="row col-sm-12 col-md-12">
+
+    
+
+            <div class = "gallery">
+            <h3 class="section-heading">Explore Our Process</h3>
+                <div id="lightgallery2" >
+                    <a href="https://youtu.be/8UKBay5pVyI" data-sub-html="<h4>Concept Sketch Videos</h4><p>We created video sketches to illustrate our ideas to users and Odigo stakeholders in order to gather feedback. </p>">
+                            <span class="rollover" ></span>
+
+                        <img src="img/design/gallery/thumb/design2.png"/>
+                    </a>
+
+                      <a href="img/design/gallery/design1.jpg" data-sub-html="<h4>Usability Testing Ambient Displays</h4><p>We found that many users today loath mobile notification especially when they are irrelevant to the their context. We can alleviate the burden of mobile notification overload and deliver notifications via an ambient trigger. </p>">
+                            <span class="rollover" ></span>
+
+                        <img src="img/design/gallery/thumb/design1.jpg"/>
+                    </a>
+
+                    <a href="img/design/gallery/design3.jpg"  data-sub-html="<h4>Usability Testing Procedural Tasks</h4><p>We created a click-through wireframe mockup of our step-by-step instruction app to put the solution in the hands of users.   </p>">
+                            <span class="rollover" ></span>
+
+                        <img src="img/design/gallery/thumb/design3.jpg"/>
+                    </a>
+
+                    
                 </div>
-
             </div>
-
-            <div class="col-sm-12 col-md-4">
-                <div class="grid">
-                    <div class="grid-sizer"></div><!-- Used for setting column width -->
-                    <div class="grid-item">
-                        <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                    </div>
-                   <div class="grid-item">
-                        <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                    </div>
-                     <div class="grid-item">
-                        <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                    </div>
-                </div>
-                <span class="img-caption">Here are a few of the videos we showed to Odigo in order to convey our ideas quickly, accurately, and in bulk as the videos did the talking, not us.</span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-8">
-                <div class="design-section secondary-lead-in">
-                    <h4>Lo Fi</h4>
-                    <div>
-                        <h5>Prototyping/Exploration</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        <h5>Usability Testing</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-                <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-8">
-                <div class="design-section secondary-lead-in">
-                    <h4>Mid Fi</h4>
-                    <div>
-                        <h5>Prototyping/Exploration</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        <h5>Usability Testing</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-                <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-8">
-                <div class="design-section secondary-lead-in">
-                    <h4>High Fi</h4>
-                    <div>
-                        <h5>Prototyping/Exploration</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        <h5>Usability Testing</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-                <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-8">
-                <div class="design-section secondary-lead-in">
-                    <h4>Tech Development</h4>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-                <div class="img-cont"><img src="img/placeholder.jpg" /></div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
-        </div>
-
+        </div>  
     </div>
+
+
 
 </section>
 
@@ -467,71 +597,80 @@
     <div class="container" id="design-intro">
         <div class="row">
             <div class="col-sm-12 col-md-8">
-                <h2 class="section-heading">Prototype</h2>
+                <h2 class="section-heading">Final Prototype</h2>
                 <p class="lead-in">
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
+                We completed three rounds of prototyping our design, with levels of fidelity ranging from paper versions to clickable prototypes and finally to a native iOS application.
                 </p>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-12 col-md-4 final-block">
-                <h3 class="visible-xs-block visible-sm-block">Image Recognition</h3>
-                <div class="img-cont">
-                    <img src="img/process/filler.jpg" />
+            <div class="col-sm-12 col-md-4">
+                <h3 class = "lead-in">Abeo Guides</h3>
+                <!-- <h3 class="hidden-xs hidden-sm">Abeo Guides</h3> -->
+                <div class="secondary-lead-in">               
+
+                    <p> <h6>Problem</h6>
+                        Tourists get bogged down by the information listed in their travel guides and mobile applications. <br></br>
+                        <h6>Solution</h6>
+                        Abeo Guides provide in-the-moment help so tourists can stop digging for information on their devices and their travel guides. 
+
+                    </p>
                 </div>
-                <span class="img-caption">Image caption goes here</span>
             </div>
-
-            <div class="col-sm-12 col-md-8">
-                <h3 class="hidden-xs hidden-sm">Image Recognition</h3>
-                <p>
-                    <h4>Subsection</h4>
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-
-                    <h4>Subsection</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
+            <div class="col-sm-12 col-md-8 final-block">
+                <div class="img-cont">
+                    <img src="img/prototype/guides.png"/>
+                </div>
             </div>
         </div>
+
+
         <div class="row">
-            <div class="col-sm-12 col-md-4 final-block">
-                <h3 class="visible-xs-block visible-sm-block">Contexual Guides</h3>
-                <div class="img-cont">
-                    <img src="img/process/filler.jpg" />
-                </div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
+            <div class="col-sm-12 col-md-4">
+                <h3 class = "lead-in">Abeo Snap</h3>
+                <!-- <h3 class="hidden-xs hidden-sm">Abeo Guides</h3> -->
+                <div class="secondary-lead-in">               
 
-            <div class="col-sm-12 col-md-8">
-                <h3 class="hidden-xs hidden-sm">Contexual Guides</h3>
-                <p>
-                    <h4>Subsection</h4>
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-                    <h4>Subsection</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
+                    <p >
+                        <h4>Abeo Snap lets tourists use their camera to ask questions and get answers.</h4>
+                        Using image recognition technology, tourists can take photos of places and objects to search for Guides related to the image. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 final-block">
+                <div class="img-cont">
+                    <img src="img/prototype/camera.png"/>
+                </div>
             </div>
         </div>
+
+
         <div class="row">
-            <div class="col-sm-12 col-md-4 final-block">
-                <h3 class="visible-xs-block visible-sm-block">Triggers</h3>
-                <div class="img-cont">
-                    <img src="img/process/filler.jpg" />
-                </div>
-                <span class="img-caption">Image caption goes here</span>
-            </div>
+            <div class="col-sm-12 col-md-4">
+                <h3 class = "lead-in">Abeo Notifications</h3>
+                <!-- <h3 class="hidden-xs hidden-sm">Abeo Guides</h3> -->
+                <div class="secondary-lead-in">               
 
-            <div class="col-sm-12 col-md-8">
-                <h3 class="hidden-xs hidden-sm">Triggers</h3>
-                <p>
-                    <h4>Subsection</h4>
-                    Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-                    <h4>Subsection</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
+                    <p >
+                        <h4>Abeo Notifications let tourists spend less time glued to their devices by notifying them only when the app has a Guide related to their context.</h4>
+                        The app uses the tourist's GPS location and situation to know when help is needed most. 
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 final-block">
+                <div class="img-cont">
+                    <img src="img/prototype/notifications.png"/>
+                </div>
             </div>
         </div>
+       
+
+
     </div>
+
+
 
 </section>
 
@@ -545,53 +684,60 @@
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <h2 class="section-heading">About the Team</h2>
-                    <p class="lead-in">
+                 <!--    <p class="lead-in">
                         Lead in text  dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium co
-                    </p>
+                    </p> -->
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <div class="about-card">
                     <div class="card-image">
-                        <div class="img-cont"><img src="img/about/ajayan.jpg" /></div>
+                        <div class="img-cont"><img src="img/team/ajayan.jpg" /></div>
                         <h5 class="hidden-xs">Ajayan Subramanian</h5>
                         <h5 class="visible-xs-block">Ajayan <br />Subramanian</h5>
+                        <h6>UX Lead</h6>
                     </div>
                     <p class="card-bio">
-                        Ajayan is a designer from Bangalore, India. Prior to CMU he was a UI developer. He enjoys watching film noir and follows Arsenal Football Club.
+                        Ajayan Subramanian is a designer from Bangalore, India. Prior to CMU he was a UI developer. He enjoys watching film noir and follows Arsenal Football Club.
                         <div class="card-meta">
-                            <span class="card-role"><strong>Role:</strong> UX Lead</span>
-                            <span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> placeholder</span>
-                            <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> placeholder</span>
+                            <!-- <span class="card-role"><strong>Role:</strong> UX Lead</span> -->
+                            
+                            <a href="mailto:ajayan.subramanian@gmail.com"><span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> ajayan.subramanian@gmail.com</span></a>
+
+                           <a href="http://ajayans.com/"><span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> ajayans.com</span></a> 
                         </div>
                     </p>
                 </div>
                 <div class="about-card">
                     <div class="card-image">
-                        <div class="img-cont"><img src="img/about/katie.png" /></div>
+                        <div class="img-cont"><img src="img/team/katie.jpg" /></div>
                         <h5>Katie Sawaya</h5>
+                        <h6>Research Lead</h6>
                     </div>
                     <p class="card-bio">
                         Katie Sawaya is a wandering anthropology buff who is pursing user research. Prior to CMU, Katie was a fire fighter and ski coach.
                         <div class="card-meta">
-                            <span class="card-role"><strong>Role:</strong> Research Lead</span>
-                            <span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> placeholder</span>
-                            <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> placeholder</span>
+                            <!-- <span class="card-role"><strong>Role:</strong> Research Lead</span> -->
+                           
+                           <a href="mailto:katie.sawaya@gmail.com"><span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> katie.sawaya@gmail.com</span></a> 
+                           <a href="http://www.katiesawaya.com/"><span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> katiesawaya.com</span></a> 
                         </div>
                     </p>
                 </div>
                 <div class="about-card">
                     <div class="card-image">
-                        <div class="img-cont"><img src="img/about/john.jpg" /></div>
+                        <div class="img-cont"><img src="img/team/john.jpg" /></div>
                         <h5>John DeGore</h5>
+                        <h6>Design Lead</h6>
                     </div>
                     <p class="card-bio">
                         John DeGore is a visual and UX designer from Pittsburgh, PA. He likes mac 'n cheese and Stevie Wonder.
                         <div class="card-meta">
-                            <span class="card-role"><strong>Role:</strong> Design Lead</span>
-                            <span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> placeholder</span>
-                            <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> placeholder</span>
+                            <!-- <span class="card-role"><strong>Role:</strong> Design Lead</span> -->
+                            
+                            <a href="mailto:john.degore@gmail.com"><span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> john.degore@gmail.com</span></a>
+                            <a href="http://www.degore.com/"><span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> degore.com</span></a>
                         </div>
                     </p>
                 </div>
@@ -600,30 +746,36 @@
             <div class="col-sm-12 col-md-6">
                 <div class="about-card">
                     <div class="card-image">
-                        <div class="img-cont"><img src="img/about/angela.jpg" /></div>
+                        <div class="img-cont"><img src="img/team/angela.jpg" /></div>
                         <h5>Angela Mu Liu</h5>
+                        <h6>Tech Lead</h6>
                     </div>
                     <p class="card-bio">
-                        Angela Mu Liu is a fullstack developer and visual designer from Cupertino, CA. She studied Information Systems and HCI at CMU before her masters.
+                        Angela Mu Liu is a fullstack developer and visual designer from Cupertino, CA. She studied Information Systems and HCI at CMU before her Masters.
                         <div class="card-meta">
-                            <span class="card-role"><strong>Role:</strong> Tech Lead</span>
-                            <span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> angelamuliu@gmail.com</span>
-                            <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> amliu-portfolio.blogspot.com/</span>
+                            <!-- <span class="card-role"><strong>Role:</strong> Tech Lead</span> -->
+                            
+                            <a href="mailto:angelamuliu@gmail.com"><span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> angelamuliu@gmail.com</span></a>
+                           <a href="http://amliu-portfolio.blogspot.com/"> <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> amliu-portfolio.blogspot.com</span></a>
                         </div>
                     </p>
                 </div>
                 <div class="about-card">
                     <div class="card-image">
-                        <div class="img-cont"><img src="img/about/katherine.jpg" /></div>
+                        <div class="img-cont"><img src="img/team/katherine.jpg" /></div>
                         <h5 class="hidden-xs">Katherine Habeck</h5>
                         <h5 class="visible-xs-block">Katherine<br />Habeck</h5>
+                        <h6>Project Manager</h6>
+
                     </div>
                     <p class="card-bio">
                         Katherine Habeck is an artist and designer from Ardmore, OK. Prior to CMU, Katherine studied Fine Art and Creative Computation.
                         <div class="card-meta">
-                            <span class="card-role"><strong>Role:</strong> Project Manager</span>
-                            <span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> kahabeck@gmail.com</span>
-                            <span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> katherinehabeck.com</span>
+                            <!-- <span class="card-role"><strong>Role:</strong> Project Manager</span> -->
+                           
+                           <a href="mailto:kahabeck@gmail.com"><span class="card-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> kahabeck@gmail.com</span></a> 
+
+                            <a href="http://www.katherinehabeck.com/"><span class="card-website"><i class="fa fa-external-link" aria-hidden="true"></i> katherinehabeck.com</span></a>  
                         </div>
                     </p>
                 </div>
@@ -636,7 +788,7 @@
 
 
 <footer>
-    MHCI 2016 :: Angela Liu (Webmaster)
+    Carnegie Mellon University | Human-Computer Interaction Institute | MHCI 2016 
 </footer>
 
 
@@ -647,23 +799,6 @@
 
 </body>
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/agency.js"></script>
-
-<!-- Custom Javascript (not to theme) -->
-<script src="js/cover.js"></script>
-<script src="js/script.js"></script>
 
 
 </html>

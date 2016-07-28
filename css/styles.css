@@ -24,12 +24,20 @@ h4 {
     text-transform: initial;
     font-weight: 500;
     margin-bottom: 20px;
+    line-height: normal;
 }
 h5 {
-    margin-bottom: 10px;
-    margin-top: 20px;
+    /*margin-bottom: 10px;*/
+    /*margin-top: 20px;*/
     font-weight: 700;
 }
+
+h6 {
+    /*margin-bottom: 10px;*/
+    /*margin-top: 10px;*/
+    font-weight: 600;
+}
+
 p {
     font-size: 16px;
 }
@@ -51,20 +59,65 @@ body {
     #home .lead-in { margin-bottom: 0;}
 }
 
+
+.gallery{
+    margin-top: 100px;
+}
+
+#lightgallery a img {
+    vertical-align: sub;
+}
+
+.lg-sub-html {
+
+background-color:rgba(0,0,0,1);
+}
+
+div.gallery img {
+
+     -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+div.gallery img:hover {
+  -webkit-filter: blur(2px);
+}
+
+span.rollover {
+    opacity: 1;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition: -webkit-transform 1s;
+    background:url(mag.png) center center no-repeat #000;
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+}
+
+span.rollover:hover {
+    opacity: .7;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition: -webkit-transform 1s;
+    -webkit-box-shadow: 0px 0px 4px #000;
+    -moz-box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px #000;
+}
 /************************************************/
 /* HEADER */
 /************************************************/
 
-.intro-text {
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    text-align: center;
-}
+
 @media only screen and (min-width: 768px) { .intro-text {top: 30vh;} }
 .intro-heading { 
     position: relative;
-    font-weight:700;
+    font-weight:900;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -130,6 +183,28 @@ body {
     .secondary-lead-in h3 {
         margin-top: 0px;
     }
+}
+
+.video-container .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    /*background: black;*/
+    /*opacity: 0.5;*/
+
+}
+
+.intro-text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+
 }
 
 /************************************************/
@@ -305,7 +380,9 @@ body {
 @media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
 @media only screen and (min-width: 768px) { #about-us .img-cont { width: 175px; }}
 
-@media only screen and (min-width: 768px) { #about-us h5 { margin-bottom: 20px; }}
+@media only screen and (min-width: 768px) { #about-us h5 { margin-bottom: 5px; }}
+@media only screen and (min-width: 768px) { #about-us h6 { margin-bottom: 30px; }}
+
 
 @media only screen and (min-width: 768px) { .card-meta { margin-top: 10px; }}
 
