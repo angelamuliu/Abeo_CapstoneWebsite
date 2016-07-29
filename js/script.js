@@ -6,10 +6,7 @@ $(document).ready(function() {
             download:false,
             thumbnail:true,
             animateThumb:true,
-                showThumbByDefault: false,
-
-            // thumbWidth:50,
-            // thumbHeight:50,
+            showThumbByDefault: false,
             subHtmlSelectorRelative: true,
         });
  
@@ -17,8 +14,6 @@ $(document).ready(function() {
             download:false,
             thumbnail:true,
             animateThumb:true,
-            // thumbWidth:50,
-            // thumbHeight:50,
             subHtmlSelectorRelative: true,
             youtubePlayerParams: {
                 modestbranding: 1,
