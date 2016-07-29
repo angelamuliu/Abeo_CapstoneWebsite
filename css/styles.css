@@ -47,7 +47,8 @@ body {
 
 /* Keep images from being huge */
 .img-cont img { width: 100%;}
-.img-cont { width: 100%; margin-top: 10px; padding-bottom: 5px;}
+.img-cont.phone { max-width: 400px;} /* Prevent phone containers being too big though*/
+.img-cont { width: 100%; margin-top: 10px; margin-bottom: 5px; position: relative;}
 @media only screen and (min-width: 992px) { .img-cont { margin: 0;} }
 .img-caption { font-size: 13px;}
 
@@ -93,15 +94,15 @@ span.rollover {
     -webkit-transition: -webkit-transform 1s;
     background:url(mag.png) center center no-repeat #000;
     cursor: pointer;
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     position: absolute;
     z-index: 10;
     opacity: 0;
 }
 
 span.rollover:hover {
-    opacity: .7;
+    opacity: .5;
     -o-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -webkit-transition: -webkit-transform 1s;
@@ -317,6 +318,7 @@ span.rollover:hover {
     padding-bottom: 5px;
     padding-top: 0;
 }
+@media only screen and (min-width: 768px) { .grid-item, .grid-sizer { width:25%;} }
 
 #design .row {
     margin-top: 10px;
@@ -345,7 +347,9 @@ span.rollover:hover {
 
 #final h3 {
     margin-top: 0;
+    margin-bottom: 0;
 }
+@media only screen and (min-width: 768px) { #final h4 { margin-bottom: 0px; }}
 
 /* On small screens, adding padding to bottom of images */
 .final-block { margin-bottom: 10px; }
