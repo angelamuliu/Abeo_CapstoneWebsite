@@ -129,14 +129,24 @@ span.rollover:hover {
 /* HEADER */
 /************************************************/
 
-
+.intro-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    top: 10vh;
+}
 @media only screen and (min-width: 768px) { .intro-text {top: 30vh;} }
 .intro-heading { 
     position: relative;
     font-weight:900;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #prototype-video { width: 100%; height: 80vh; }
 
@@ -210,16 +220,6 @@ span.rollover:hover {
     z-index: 1;
     /*background: black;*/
     /*opacity: 0.5;*/
-
-}
-
-.intro-text {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    color: white;
-    z-index: 2;
 
 }
 
@@ -381,7 +381,8 @@ span.rollover:hover {
 @media only screen and (min-width: 768px) {.final-block { margin-bottom: 0px; }}
 
 #final .img-cont {
-    /*margin-bottom: 5px;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
