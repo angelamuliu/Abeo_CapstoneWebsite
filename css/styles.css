@@ -51,6 +51,19 @@ body {
 .img-cont { width: 100%; margin-top: 10px; margin-bottom: 5px; position: relative;}
 @media only screen and (min-width: 992px) { .img-cont { margin: 0;} }
 .img-caption { font-size: 13px;}
+.phone-container {
+    position: relative;
+    z-index: 5;
+}
+.phone-content {
+    z-index: 2;
+    position: absolute;
+    top: 14.1299%;
+    left: 17.83216%;
+    width: 65.7342657%;
+    height: 68.110035%;
+    outline: 5px solid black;
+}
 
 @media only screen and (min-width: 768px) { 
     .lead-in {
