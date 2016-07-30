@@ -61,13 +61,31 @@ $(document).ready(function() {
     var diamondHeight_research = $("#research-sections").height();
     $("#diamonds-1").css("height", diamondHeight_research);
 
+    // Setting up diamonds for design section
+    var sectionHeightBefore_design = $("#diamonds-2").offset().top - 100; // height of sections before diamonds + nav
+    var diamondHeight_design = $("#design-sections").height();
+    $("#diamonds-2").css("height", diamondHeight_design);
+
     // Scroll listener to make them stick
     $(window).scroll(function() {
         // First figure out if its the research or prototyping diamonds
         var diamonds, sectionHeightBefore, diamondHeight;
-        diamonds = $(".diamonds").first();
-        sectionHeightBefore = sectionHeightBefore_research;
-        diamondHeight = diamondHeight_research;
+
+
+        if ( $(this).scrollTop() > sectionHeightBefore_research && $(this).scrollTop() < sectionHeightBefore_design)  {
+            diamonds = $(".diamonds").first();
+            sectionHeightBefore = sectionHeightBefore_research;
+            diamondHeight = diamondHeight_research;
+
+            // Remove stickiness for the other diamond set
+            $(".diamonds").last().removeClass("stick-top");
+        } else {
+            diamonds = $(".diamonds").last();
+            sectionHeightBefore = sectionHeightBefore_design;
+            diamondHeight = diamondHeight_design;
+
+            $(".diamonds").first().removeClass("stick-top");
+        }
 
         if( ($(this).scrollTop() > sectionHeightBefore)){
             if (($(this).scrollTop() > (sectionHeightBefore + diamondHeight - 500))) {
@@ -77,9 +95,11 @@ $(document).ready(function() {
                 diamonds.addClass("stick-top");    // scrolling in = sticky
                 diamonds.find(".diamond-cont").removeClass("stick-bottom");
 
-                diamonds.find(".diamond-fill").css("height", ($(this).scrollTop() - sectionHeightBefore + 30) + "px");
+                diamonds.find(".diamond-fill").css("height", (($(this).scrollTop() - sectionHeightBefore) / diamondHeight) * 300 + "%");
+                // diamonds.find(".diamond-fill").css("height", ($(this).scrollTop() - sectionHeightBefore) + "px");
             }
-        } else {
+        } else { // Might not be necessary since it can't get in here due to the first check
+        // Could remove in future, but there's 2 days left
             diamonds.removeClass("stick-top"); // scroll before = remove
             diamonds.find(".diamond-cont").removeClass("stick-bottom");
         }

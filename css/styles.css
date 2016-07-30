@@ -56,6 +56,8 @@ body {
     z-index: 5;
 }
 .phone-content {
+    margin: 0;
+    padding: 0;
     z-index: 2;
     position: absolute;
     top: 14.1299%;
@@ -303,7 +305,7 @@ span.rollover:hover {
 }
 .diamond-fill {
     width: 763px;
-    height: 30px;
+    height: 0px;
     background: #e8edf1;
     /*height: 284px;*/
     position: absolute;
@@ -319,6 +321,12 @@ span.rollover:hover {
 /************************************************/
 #design {
     background-color: white;
+}
+
+#design .lead-in ul {
+    list-style: none;
+    color: #b0428e;
+    margin-bottom: 0;
 }
 
 .grid {
@@ -342,6 +350,7 @@ span.rollover:hover {
     margin-left: 10px;
 }
 @media only screen and (max-width: 768px) { .design-section {padding-top: 30px;}}
+@media only screen and (min-width: 768px) { #design-sections { margin-bottom: 100px; } }
 .design-section h4 {
     margin-top: 0;
 }
