@@ -232,8 +232,8 @@ span.rollover:hover {
     top: 0px;
     left: 0px;
     z-index: 1;
-    /*background: black;*/
-    /*opacity: 0.5;*/
+    background: black;
+    opacity: 0.5;
 
 }
 
